@@ -41,7 +41,8 @@ module.exports = React.createClass({
              */
             isExpanded: function(keypath, value) {
                 return false;
-            }
+            },
+            isRootExpanded: true
         };
     },
     getInitialState: function() {
@@ -64,6 +65,7 @@ module.exports = React.createClass({
             label: 'root',
             root: true,
             isExpanded: p.isExpanded,
+            isRootExpanded: p.isRootExpanded,
             interactiveLabel: p.interactiveLabel
         });
 
